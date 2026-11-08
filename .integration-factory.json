@@ -5,7 +5,7 @@
   "releaseEligible": true,
   "maintainer": "jannikco",
   "license": "MIT",
-  "sourceRevision": "ea33908e4d5e10508739f28e11abf708e11f3117f1108b904229eeeb00079e55",
+  "sourceRevision": "11dd411e32f99ef6681e9e822cd09935f1bd6ab92c33aecb50e129a205abc98f",
   "evidence": [
     "Pinned public OpenAPI contract",
     "tests/leadadapter.test.mjs"
@@ -22,6 +22,40 @@
     "@webhooks_list_get"
   ],
   "attributionSlug": "github-linkedin-webhooks-api",
+  "artifactType": "workflow",
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "@webhooks_list_get",
+          "level": "Tested",
+          "evidenceRefs": [
+            "SDK/agent/workflow contract fixtures; no live provider execution"
+          ],
+          "method": "contract-fixture"
+        }
+      ],
+      "evidenceRefs": [
+        "SDK/agent/workflow contract fixtures; no live provider execution"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  },
+  "qualityVersion": 2,
+  "utility": {
+    "problem": "Inspect webhook registrations using the documented API.",
+    "output": "Authenticated LeadAdapter results, review reports and resumable research-to-CRM workflows"
+  },
+  "agentReady": true,
+  "version": "0.2.0",
+  "executionAuthority": "leadadapter-api",
   "factory": "leadadapter-pipmcp",
   "generatorVersion": 1
 }
