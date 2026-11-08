@@ -1,0 +1,17 @@
+{
+  "name": "linkedin-webhooks-api",
+  "version": "0.1.0",
+  "description": "Inspect webhook registrations using the documented API.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node example.mjs"
+  },
+  "exports": "./lib/index.js",
+  "types": "./lib/index.d.ts"
+}
